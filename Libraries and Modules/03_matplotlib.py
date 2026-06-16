@@ -10,12 +10,18 @@ df = pd.read_csv('data.csv')
 x_data = df['rollno']
 y_data = df['marks']
 
-plt.scatter(x_data, y_data)  # to draw scatter plot
+# plt.scatter(x_data, y_data)  # to draw scatter plot
 
 # plt.xlabel = 'Area'
 # plt.ylabel = 'Price'
 
 # plt.plot(x_data, y_data, color='red')  # to draw line plot (line color: red)
+
+# plt.bar(x_data,y_data)  # to draw bar chart
+
+# plt.pie(x_data,labels=y_data)  # to draw pie chart
+
+# plt.boxplot(x_data)  # to draw box plot
 
 plt.show()
 
