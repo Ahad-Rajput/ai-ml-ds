@@ -50,4 +50,11 @@ print(df['marks'].max())  # gives maximum value from 'marks' column
 max_std = df[df['marks'] == df['marks'].max()]  # Filter the data of student with maximum marks
 # print(max_std)
 
+df.to_excel('some_data.xlsx')
+print(df)
+"""
+df.to_excel() <- This create an excel file and copy our csv data in it
+=> For that you should have installed "openpyxl" library
+"""
+
 # print("Everything is fine!")
