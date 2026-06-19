@@ -34,3 +34,49 @@ err = np.full((3,4), 5) # Creating an array of 3x4 with all 5 values
 
 idn = np.eye(5,5)  # Create an identity matrix
 # print(idn)
+
+# print(drr.dtype)  # data type of array elements
+# print(arr.dtype)
+# print(crr.dtype)
+# print(idn.dtype) 
+
+# print(type(idn))  # type of array
+
+# print("Length of brr: " , len(brr)) # give no. of rows
+
+# print("Dimentions of arr: " , arr.ndim) # give dimentions of array
+# print("Dimentions of idn: " , idn.ndim)
+
+# print("Size of brr: ", brr.size) # give total numbers of array
+
+# Basic Operation
+
+ar1 = np.arange(5)
+ar2 = np.array([(1,2,3,4,5), (10,20,30,40,50)])
+
+print("ar1: ", ar1)
+print("ar2: ", ar2)
+
+# sum = ar1 + ar2  # Addition of two array / matrixes
+# print("ar1 + ar2 : ",sum)
+
+sum = np.add(ar1,ar2)   # Addition Method by numpy
+print("sum: ",sum)
+
+# sub = ar2 - ar1  # Subtraction of two array / matrixes
+sub = np.subtract(ar2, ar1)  # Subtraction Method by numpy
+print(sub)
+
+# mul = ar1 * ar2   # multiplication of two array / matrixes
+mul = np.multiply(ar1, ar2)  # multiplication Method by numpy
+print(mul)
+
+# div = ar1 / ar2   # division of two array / matrixes
+div = np.divide(ar1, ar2)  # division Method by numpy
+print(div) 
+
+sq = ar1 ** 2  # square of matrix
+print(sq)
+
+cube = ar2 ** 3  # cube of matrix
+print(cube)
